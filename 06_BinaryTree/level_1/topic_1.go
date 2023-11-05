@@ -33,7 +33,7 @@ func (root *TreeNode) PostOrderTraversal() {
 	if root == nil {
 		return
 	}
-	root.Left.PostOrderTraversal()
 	root.Right.PostOrderTraversal()
+	root.Left.PostOrderTraversal()
 	fmt.Println(root.Val)
 }

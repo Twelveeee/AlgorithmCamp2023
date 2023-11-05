@@ -38,5 +38,5 @@ func TestInOrderTraversal(t *testing.T) {
 func TestPostOrderTraversal(t *testing.T) {
 	root := makeTreeNode()
 	root.PostOrderTraversal()
-	// 1247865
+	// 8762145
 }
