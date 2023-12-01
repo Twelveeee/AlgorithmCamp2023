@@ -2,8 +2,8 @@ package level1
 
 import "math"
 
-// 转换成小写字母
-// https://leetcode.cn/problems/to-lower-case/description/
+// 字符串转换整数 (atoi)
+// https://leetcode.cn/problems/string-to-integer-atoi/description/
 
 func myAtoi(s string) int {
 	i, ans, n := 0, 0, len(s)
