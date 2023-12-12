@@ -7,10 +7,10 @@ import (
 )
 
 func TestFindFirstCommonNode(t *testing.T) {
-	headA := InitLinkNode(1)
-	node2 := InitLinkNode(2)
-	node3 := InitLinkNode(3)
-	node4 := InitLinkNode(4)
+	headA := &ListNode{1, nil}
+	node2 := &ListNode{2, nil}
+	node3 := &ListNode{3, nil}
+	node4 := &ListNode{4, nil}
 
 	node3.Next = node4
 	node2.Next = node3
@@ -19,8 +19,8 @@ func TestFindFirstCommonNode(t *testing.T) {
 	PrintListNode(headA)
 	fmt.Println()
 
-	headB := InitLinkNode(0)
-	node5 := InitLinkNode(5)
+	headB := &ListNode{0, nil}
+	node5 := &ListNode{5, nil}
 
 	node5.Next = node3
 	headB.Next = node5

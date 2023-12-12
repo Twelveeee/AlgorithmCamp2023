@@ -7,13 +7,13 @@ import (
 )
 
 func TestDetectCycle(t *testing.T) {
-	headA := InitLinkNode(1)
-	node2 := InitLinkNode(2)
-	node3 := InitLinkNode(3)
-	node4 := InitLinkNode(4)
-	node5 := InitLinkNode(5)
-	node6 := InitLinkNode(6)
-	node7 := InitLinkNode(7)
+	headA := &ListNode{1, nil}
+	node2 := &ListNode{2, nil}
+	node3 := &ListNode{3, nil}
+	node4 := &ListNode{4, nil}
+	node5 := &ListNode{5, nil}
+	node6 := &ListNode{6, nil}
+	node7 := &ListNode{7, nil}
 
 	headA.Next = node2
 	node2.Next = node3

@@ -29,9 +29,3 @@ func PrintListNode(head *ListNode) {
 	fmt.Println(head.Val)
 	PrintListNode(head.Next)
 }
-
-func InitLinkNode(val int) *ListNode {
-	return &ListNode{
-		val, nil,
-	}
-}
