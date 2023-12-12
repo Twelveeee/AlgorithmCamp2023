@@ -1,8 +1,12 @@
 package level2
 
+import (
+	. "AlgorithmCamp2023/utils"
+)
+
 // 删除特定节点
 // https://leetcode.cn/problems/remove-linked-list-elements/description/
-func removeElements(head *LinkNode, val int) *LinkNode {
+func removeElements(head *ListNode, val int) *ListNode {
 	if head == nil {
 		return head
 	}
@@ -12,7 +16,7 @@ func removeElements(head *LinkNode, val int) *LinkNode {
 	}
 
 	tail := head
-	pre := &LinkNode{}
+	pre := &ListNode{}
 	pre.Next = tail
 	for tail != nil {
 		if tail.Val == val {

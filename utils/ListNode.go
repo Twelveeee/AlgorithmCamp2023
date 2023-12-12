@@ -1,5 +1,7 @@
 package utils
 
+import "fmt"
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -18,4 +20,18 @@ func BuildListNode(list []interface{}) *ListNode {
 	}
 
 	return head.Next
+}
+
+func PrintListNode(head *ListNode) {
+	if head == nil {
+		return
+	}
+	fmt.Println(head.Val)
+	PrintListNode(head.Next)
+}
+
+func InitLinkNode(val int) *ListNode {
+	return &ListNode{
+		val, nil,
+	}
 }

@@ -1,8 +1,10 @@
 package level3
 
+import . "AlgorithmCamp2023/utils"
+
 // 环形链表找入环节点
 // https://leetcode.cn/problems/linked-list-cycle-ii/
-func detectCycle(head *LinkNode) *LinkNode {
+func detectCycle(head *ListNode) *ListNode {
 	fast, slow := head, head
 
 	for {

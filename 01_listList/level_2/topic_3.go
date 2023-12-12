@@ -1,8 +1,12 @@
 package level2
 
+import (
+	. "AlgorithmCamp2023/utils"
+)
+
 // 合并两个有序链表
 // https://leetcode.cn/problems/merge-two-sorted-lists/description/
-func mergeTwoLists(list1, list2 *LinkNode) *LinkNode {
+func mergeTwoLists(list1, list2 *ListNode) *ListNode {
 	if list1 == nil {
 		return list2
 	}
@@ -11,7 +15,7 @@ func mergeTwoLists(list1, list2 *LinkNode) *LinkNode {
 		return list1
 	}
 
-	tail := &LinkNode{0, nil}
+	tail := &ListNode{0, nil}
 	head := tail
 
 	for list1 != nil && list2 != nil {

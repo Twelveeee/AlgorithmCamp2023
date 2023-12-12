@@ -1,8 +1,12 @@
 package level2
 
+import (
+	. "AlgorithmCamp2023/utils"
+)
+
 // 两个链表第一个公共子节点 相交链表
 // https://leetcode.cn/problems/intersection-of-two-linked-lists/description/
-func findFirstCommonNode(headA, headB *LinkNode) *LinkNode {
+func findFirstCommonNode(headA, headB *ListNode) *ListNode {
 
 	lenA, lenB := 0, 0
 
