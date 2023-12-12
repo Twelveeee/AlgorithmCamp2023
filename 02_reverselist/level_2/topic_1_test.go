@@ -1,6 +1,7 @@
 package level2
 
 import (
+	. "AlgorithmCamp2023/utils"
 	"fmt"
 	"testing"
 )
@@ -9,12 +10,12 @@ import (
 // https://leetcode.cn/problems/reverse-linked-list-ii/description/
 
 func TestReverseBetween(t *testing.T) {
-	node := InitListNodeByList([]int{1, 2, 3, 4, 5})
-	node.PrintList()
+	node := BuildListNode([]interface{}{1, 2, 3, 4, 5})
+	PrintListNode(node)
 
 	node = reverseBetween(node, 2, 4)
 	fmt.Println("**after**")
 
-	node.PrintList()
+	PrintListNode(node)
 
 }

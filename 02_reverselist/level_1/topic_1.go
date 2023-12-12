@@ -1,9 +1,13 @@
 package level1
 
-// 建立虚拟头节点辅助翻转
-func reverseListV1(head *LinkNode) *LinkNode {
+import (
+	. "AlgorithmCamp2023/utils"
+)
 
-	dummyHead, temp := &LinkNode{}, &LinkNode{}
+// 建立虚拟头节点辅助翻转
+func reverseListV1(head *ListNode) *ListNode {
+
+	dummyHead, temp := &ListNode{}, &ListNode{}
 	dummyHead.Next = head
 	pre, curr := dummyHead, dummyHead.Next
 	for curr.Next != nil {
@@ -17,11 +21,11 @@ func reverseListV1(head *LinkNode) *LinkNode {
 }
 
 // 直接操作链表实现翻转
-func reverseListV2(head *LinkNode) *LinkNode {
+func reverseListV2(head *ListNode) *ListNode {
 
 	curr := head
-	temp := &LinkNode{}
-	var pre *LinkNode
+	temp := &ListNode{}
+	var pre *ListNode
 
 	for curr != nil {
 		temp = curr.Next
@@ -34,7 +38,7 @@ func reverseListV2(head *LinkNode) *LinkNode {
 }
 
 // 递归
-func reverseListV3(head *LinkNode) *LinkNode {
+func reverseListV3(head *ListNode) *ListNode {
 
 	if head.Next == nil || head == nil {
 		return head

@@ -1,5 +1,9 @@
 package level2
 
+import (
+	. "AlgorithmCamp2023/utils"
+)
+
 // https://leetcode.cn/problems/swap-nodes-in-pairs/description/
 func swapPairs(head *ListNode) *ListNode {
 	dummyHead := &ListNode{}
